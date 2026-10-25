@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NPTEL Ecology and Conservation Quiz</title>
+<style>
+:root{--bg:#eef2ee;--fg:#16241d;--mut:#5d6b63;--card:#fff;--bd:#d2dcd5;--ac:#1f5f6b;--on:#fff;--ok:#2e7d4f;--okb:#e0f2e7;--no:#b0412c;--nob:#f9e5df;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#14201a;--fg:#e4ece7;--mut:#9aaba1;--card:#1d2c24;--bd:#34473d;--ac:#7cc4d1;--on:#0c2227;--ok:#6fc08f;--okb:#1d3a29;--no:#e58a74;--nob:#40241d}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#14201a;--fg:#e4ece7;--mut:#9aaba1;--card:#1d2c24;--bd:#34473d;--ac:#7cc4d1;--on:#0c2227;--ok:#6fc08f;--okb:#1d3a29;--no:#e58a74;--nob:#40241d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#app{max-width:640px;margin:0 auto;padding:20px 16px 40px}
+h1{font:600 1.7rem/1.2 Georgia,"Times New Roman",serif;margin:8px 0 6px}
+h2.q{font:500 1.25rem/1.55 Georgia,"Times New Roman",serif;margin:18px 0 16px}
+.mut{color:var(--mut);margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}
+.st{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px 6px;text-align:center}
+.st strong{display:block;font-size:1.5rem;line-height:1.2}
+.st span{font-size:.8rem;color:var(--mut)}
+button{font:inherit;color:inherit;cursor:pointer}
+.btn{display:block;width:100%;padding:13px;margin:0 0 10px;border-radius:10px;border:1px solid var(--ac);background:none;color:var(--ac);font-weight:600}
+.btn.pri{background:var(--ac);color:var(--on)}
+.link{background:none;border:0;color:var(--mut);text-decoration:underline;padding:4px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{background:var(--card);border:1px solid var(--bd);border-radius:99px;padding:2px 10px;font-size:.85rem;margin-right:8px}
+.bar{height:6px;background:var(--bd);border-radius:3px;margin:10px 0;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ac)}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;padding:12px 14px;margin:0 0 8px;background:var(--card);border:1px solid var(--bd);border-radius:10px}
+.opt b{flex:none;width:24px;height:24px;line-height:24px;text-align:center;border-radius:50%;background:var(--bd);font-size:.8rem}
+.opt:disabled{color:var(--fg);cursor:default}
+.opt:not(:disabled):hover{border-color:var(--ac)}
+.opt.ok{background:var(--okb);border-color:var(--ok)}
+.opt.no{background:var(--nob);border-color:var(--no)}
+.fb{margin-top:14px}
+.fb .v{font-weight:600;margin:0 0 2px}
+.fb .v.ok{color:var(--ok)}.fb .v.no{color:var(--no)}
+button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.note{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:0 0 14px}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const RAW=`1|Ecology is the scientific study of ____ that determine the distribution and abundance of organisms.|interactions|statics|dynamics|habitat
+1|Carolus Linnaeus is considered the father of:|Modern taxonomy|Biogeography|Population ecology|Botanical geography
+1|“Enquiry into plants” is a book written by|Theophrastus|Linnaeus|Malthus|Humboldt
+1|Who amongst these is considered the father of Biogeography?|Humboldt|Theophrastus|Linnaeus|Malthus
+1|Genetic adaptation refers to:|Inheritable fitness|High reproductive rate in one generation|Physical strength of an individual|Short-term environmental comfort
+1|Thomas Robert Malthus influenced studies in:|Population ecology|Community ecology|Marine ecology|Behavioural ecology
+1|Which approach tests ecological ideas through experiments?|Laboratory approach|Theoretical approach|Field approach|Descriptive approach
+1|Which approach mainly depends on direct observation of organisms in natural surroundings?|Field approach|Laboratory approach|Historical approach|Theoretical approach
+1|In the Greek word root of Ecology, logos refers to|study|household|preservation|environment
+1|Charles Darwin is associated with:|The theory of evolution and natural selection|The theory of ecosystem formation|The theory of taxonomy|The theory of botanical geography
+2|Hierarchy emerges almost inevitably through a wide variety of evolutionary processes, for the simple reason that hierarchical structures are _____|stable|perfect|imperfect|unstable
+2|Which level is formed when similar cells and their extracellular matrix from the same origin together perform a specific function?|Tissue|Organ|Organ system|Population
+2|“The diversity that exists within an ecosystem” is|alpha (α) biodiversity|beta (β) biodiversity|gamma (γ) biodiversity|delta (δ) biodiversity
+2|“Groups of actually or potentially interbreeding natural populations, which are reproductively isolated from other such groups” is a definition of|species|cells|ecosystems|biomes
+2|The emergent principle can be stated as|Whole > sum of parts|Whole = sum of parts|Whole < sum of parts|None of these
+2|The smallest unit of life is the:|Cell|Tissue|Organ|Organism
+2|The diversity of genetic information present at the levels of phyla, families, species, populations and individuals is called:|Genetic biodiversity|Ecosystem biodiversity|Species evenness|Species richness
+2|The value of leaving use and non-use values for future generations is called:|Bequest value|Altruistic value|Option value|Existence value
+2|Value arising even though a resource is not being used is called:|Non-use value|Direct value|Indirect value|Productive value
+2|Species richness refers to:|The number of species present|The distribution of individuals among different species|The genetic variation within one population|The number of ecosystems in a biome
+3|I observe a bird take a tick out of another bird’s head and eat it. In the social context, this behaviour would be called|allo grooming|tick hunting|auto grooming|foraging
+3|Leech is an example of|ectoparasite|endoparasite|herbivore predator|parasitoid
+3|An ecological interaction in which both participating organisms are harmed is called|competition|mutualism|commensalism|neutralism
+3|Interspecific interaction occurs between|members of different species|members of the same species|two organisms that are both benefited|two organisms that remain unaffected
+3|The distance maintained by nesting penguins to avoid pecking from neighbours is related to|territorial spacing|herbivory|parasitoid pressure|prey switching
+3|A parasite that lives inside the body of its host is called|endoparasite|ectoparasite|predator|commensal
+3|Birds on giraffe are an example of|protocooperation|colony|commensalism|allelopathy
+3|Competition in which organisms directly consume a limited resource so that less remains for others is called|exploitative competition|interference competition|apparent competition|neutral competition
+3|Interference competition is also known as|contest competition|apparent competition|niche competition|exploitative competition
+3|The scientific study of animal behaviour is called|ethology|behaviourism|ecology|prey-predator dynamics
+4|Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. In this food chain|hawk is consumer and carnivore|hawk is producer|hawk is consumer and herbivore|hawk is decomposer
+4|Trees → Birds → Parasites → Hyperparasites represents|inverted pyramid of numbers|upright pyramid of numbers|spindle pyramid of numbers|dumb-bell pyramid of numbers
+4|Glacial lakes are typical examples of|oligotrophic lakes|eutrophic lakes|hypereutrophic lakes|mesotrophic lakes
+4|In a grazing food chain, the first trophic level after producers is generally occupied by:|Herbivores|Carnivores|Decomposers|Detritivores
+4|Which statement correctly defines net primary production?|Gross primary production minus energy lost through respiration per unit time|Energy intercepted by producers from the Sun|Total energy lost during transfer between trophic levels|Energy stored only in herbivore biomass
+4|Which statement correctly defines gross primary production?|Energy fixed through photosynthesis per unit time|Energy lost by organisms through respiration per unit time|Total number of producers in an ecosystem|Organic matter consumed by herbivores per unit time
+4|Which chain best represents a detritus food chain?|Fallen leaves → detritivores → small fish → large fish|Grass → chital → tiger|Rat → flea → parasitic protozoa|Phytoplankton → zooplankton → fish → sea lion
+4|Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. As we move up the food chain|available energy decreases|available energy increases|available energy remains same|available energy is zero everywhere
+4|Which statement correctly describes a decomposer?|It converts dead material into soil and recycles nutrients|It only feeds on living plants|It consumes only primary consumers|It always occupies the quaternary trophic level
+4|Which description best defines a heterotroph?|An organism that cannot produce its own food and depends on organic carbon from other sources|An organism that converts sunlight directly into inorganic nutrients|An organism that uses chemical reactions to manufacture minerals|An organism that occupies only the first trophic level
+5|In population dynamics, which pair represents additions to an existing population?|Natality and immigration|Mortality and emigration|Mortality and natality|Immigration and emigration
+5|Cover board surveys are typically used for sampling|herpetofauna|fishes|large mammals|carnivores
+5|Pan traps are used for sampling|pollinator insects|bees|butterflies|non-pollinator insects
+5|A sampling procedure such that each possible combination of sampling units out of the population has the same chance of being selected is referred to as|Simple random sampling|Systematic sampling|Stratified sampling|Multistage sampling
+5|The minimum replacement level fertility for a population to grow should be greater than|2|1|3|4
+5|A list of sampling units is called a:|Sampling frame|Sample|Sampling intensity|Stratum
+5|In capture-recapture method, the first stage involves:|Capturing, marking and releasing animals|Counting faecal pellets|Removing trapped animals permanently|Estimating bait consumption
+5|The logistic growth equation, when plotted, appears|S shaped|I shaped|J shaped|O shaped
+5|Employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k as the random start|Systematic sampling|Simple random sampling|Stratified sampling|Multistage sampling
+5|Which of these is not a measure of absolute population density?|pelt count|total count|capture-recapture method|removal method
+6|A guild is a group of species that|Utilise resources in a similar way|Occupy only one climax community|Have identical population size|Are confined to saline habitats
+6|The climax near Tindni village is being controlled by disturbance by cattle. This is an example of|disclimax|climatic climax|edaphic climax|catastrophic climax
+6|Species abundance may be expressed in terms of|Number of individuals, biomass or cover|Climate, soil and slope|Hydrosere, xerosere and halosere|Resistance, resilience and stability
+6|Resistance refers to the ability of a community to|Persist without change in the face of disturbance|Recover quickly after disturbance|Increase the number of pioneer species|Replace one seral stage with another
+6|Importance value can be written as|Relative density + Relative frequency + Relative dominance|Relative density + Relative frequency × Relative dominance|Relative density × Relative frequency + Relative dominance|Relative density × Relative frequency × Relative dominance
+6|Secondary succession refers to succession that occurs|After severe disturbance or removal of a pre-existing community|On newly exposed rock or sand surfaces|In a saline body such as a marsh|Only when climate controls the final community
+6|Lithosere is an example of|xerosere|hydrosere|psammosere|halosere
+6|A transition area where two communities meet and integrate is called|Ecotone|Habitat|Niche|Sere
+6|~Which of these is correct?|Fundamental niche > Realised niche|Fundamental niche = Realised niche|Fundamental niche < Realised niche|a or b
+6|Species richness refers to|Number of species|Number of individuals of one species|Biomass of the dominant species|Basal area of all trees
+7|In an estuary, species may use areas of|high, intermediate, and low salinity|only high temperature and high fertility|only alpine wind and poor soil|only forest canopy and grassland patches
+7|The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called|dispersal|translocation|migration|drifting
+7|Transplantation experiments are used to find|potential range|effective range|actual range|economic range
+7|Pneumatophores are roots that|grow upward from the ground to obtain air|move downward to store excess salts|spread into sand dunes to stop wind erosion|become thorns to reduce transpiration
+7|At night, cooler and denser air from upper hill areas flows down towards the valley. This wind pattern is called|hill wind|valley breeze|ocean breeze|estuary current
+7|Flamingos in the Rann of Kutch are associated with water bodies because they need|food organisms in water and safe breeding conditions|high wind speeds and snow-covered slopes|dry deciduous leaves for summer feeding|tall coniferous trees for nesting
+7|Estuaries are specialized habitats because they contain|a meeting zone of freshwater and saline water|only freshwater throughout the year|only saline water throughout the year|only dry land and thorny shrubs
+7|The movement of lions across the Gir landscape is an example of|diffusion|secular dispersal|jump dispersal|drifting
+7|Mangroves are adapted to areas that experience|high salinity and partial or complete inundation|low salinity and permanent dryness|snow accumulation and alpine winds|deep desert sand with no water movement
+7|Scarcity of food is a|push factor|chemical factor|demographic factor|pull factor
+8|Which of these correctly represents the process of habitat fragmentation and loss?|Original forest → Dissection → Perforation → Fragmentation → Attrition|Original forest → Dissection → Attrition → Fragmentation → Perforation|Original forest → Dissection → Perforation → Attrition → Fragmentation|Original forest → Dissection → Fragmentation → Perforation → Attrition
+8|Habitat degradation means|reduction in habitat quality for a given species|complete removal of all organisms from an area|legal declaration of a protected area|breaking a forest into administrative zones
+8|When area is reduced by 90% and z is taken as 0.30, species richness approximately becomes|half of the original|one-tenth of the original|double the original|unchanged
+8|Breaking a natural landscape into small isolated parcels within human-dominated land is called|habitat fragmentation|habitat restoration|ex-situ preservation|seed dormancy
+8|We prefer those areas for the creation of a conservation reserve where the level of threat is|medium|very high|very low|non-existent
+8|A very small population moves towards extinction mainly because of Allee effect, chance deaths, and related small-population problems. This is best described as|small population paradigm|habitat displacement|reserve design|biodiversity repository
+8|A population becomes smaller because its habitat is shrinking, competitors are increasing, and poaching is removing individuals. This situation is best studied under|declining population paradigm|small population paradigm|island biogeography model|cryopreservation strategy
+8|Which of these is a deterministic factor?|death rate|environmental variation|forest fire|diseases
+8|Roads, railways, dams, and similar structures contribute to fragmentation because they may act as|mortality sources and physical barriers|seed collection centers|botanical repositories|cryopreservation facilities
+8|The acronym HIPPO does not include|pollination|habitat loss|invasive species|pollution
+9|A proposed epoch marked by significant human impact on Earth’s geology and ecosystems is called?|Anthropocene|Holocene|Pleistocene|Carboniferous
+9|According to Malthusian model,|Population grows in geometric progression, food supply increases in arithmetic progression|Population grows in geometric progression, food supply increases in geometric progression|Population grows in arithmetic progression, food supply increases in arithmetic progression|Population grows in arithmetic progression, food supply increases in geometric progression
+9|Which of these is not a pillar of sustainability?|trans-boundary sustainability|environmental sustainability|economic sustainability|social sustainability
+9|The demographic transition sees a society move from|high birth rate, high death rate to low birth rate, low death rate|high birth rate, low death rate to low birth rate, low death rate|low birth rate, high death rate to low birth rate, low death rate|high birth rate, high death rate to low birth rate, high death rate
+9|Which of the following is listed as a theme of clean technology?|Water purification|Predator-prey control|Migration of birds|Food chain length
+9|When stalactites and stalagmites join together, they form a?|Column|Lagoon|Crevice|Terrace
+9|Which of these is a preventive check according to Malthus?|foresight|vice|misery|flood
+9|Which of these is a pillar of sustainability|social sustainability|industrial sustainability|agricultural sustainability|trans-boundary sustainability
+9|In cave formations, the deposits growing downward from the roof are called?|Stalactites|Stalagmites|Columns|Sediment bars
+9|Industrial processes such as the Haber process affect which biogeochemical cycle?|Nitrogen cycle|Carbon cycle only|Water cycle only|Phosphorus cycle only
+10|A community already affected by disease, weeds, pollutants, or livestock pressure is best described as which type of community?|Disturbed community|Pristine community|Climax community|Resistant community
+10|When an organism absorbs a toxic substance into its tissues faster than it loses it, the process is called:|Bioaccumulation|Biomagnification|Bioavailability|Biodegradation
+10|What percentage of marine plastic debris is stated to sink to the ocean bottom?|70%|15%|30%|50%
+10|Hydrocarbons derived directly from mineral oils are called:|Petrogenic hydrocarbons|Pyrogenic hydrocarbons|Biogenic hydrocarbons|Aromatic hydrocarbons
+10|“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increases it instead” is a definition for|maladaptation|adaptation|mitigation|malmitigation
+10|A normal ecological community faces one large and infrequent disturbance and then returns close to its earlier condition. Which outcome is best represented?|Recovery|Long-term alteration|Bioaccumulation|Habitat displacement
+10|Macrodebris in the context of plastic debris has fragments of size|> 20 mm|5 - 20 mm|< 5 mm|< 1 mm
+10|The Deepwater Horizon incident is classified by origin as which kind of oil spill?|Accidental|Natural|Intentional|Biogenic
+10|Harmful effects caused by a single or short-term exposure are called:|Acute toxicity|Chronic toxicity|Sub-lethal exposure|Bioavailability
+10|Mesodebris in the context of plastic debris has fragments of size|5 - 20 mm|> 20 mm|< 5 mm|< 1 mm
+11|Which term refers to the total weight of organisms removed by fishing?|Yield to fishery|Natural mortality|Recruitment|Growth
+11|Ludwig’s ratchet predicts|increasing harvesting rate|decreasing harvesting rate|constant harvesting rate|fluctuating harvesting rate
+11|A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a lake was created. It is now visited by several migratory birds. This is an example of|replacement|recovery|restoration|enhancement
+11|Which of these is correct?|The maximum sustainable yield is near the mid-point of the sigmoidal curve|The maximum sustainable yield is near the beginning of the sigmoidal curve|The maximum sustainable yield is near the end of the sigmoidal curve|None of these
+11|Which of these is correct?|R + G = M + F|R + M = G + F|R + F = M + G|R + G + M + F = 0
+11|In a logistic growth curve, growth is slow near carrying capacity mainly because the population is:|close to the environmental limit|very small|newly introduced|free from competition
+11|What does absolute abundance measure?|Actual number of individuals present|Relative catch per unit effort|Percentage change in population|Estimated trend in sightings
+11|A root zone treatment plant is an example of|phytoremediation|biological control|biomagnification|bioaccumulation
+11|What is a major risk of introducing predators for pest control?|The introduced predator may itself become a pest|The pest always becomes extinct immediately|The predator cannot reproduce under any condition|The predator reduces rainfall
+11|Ecotoxicology studies toxic chemicals mainly at which broader levels?|Population, community, ecosystem, and biosphere levels|Individual atoms and molecules only|Market demand and harvesting cost only|Crop yield and storage levels only
+12|A group of organs working together to perform one or more functions is called?|Organ system|Tissue|Organ|Organism
+12|After a forest fire, an incompletely destroyed forest develops through herbaceous, shrub and woodland stages toward a stable stage. This is best described as?|Secondary succession|Climatic climax|Bioaccumulation|Species-area effect
+12|If organisms already present in an area change the soil conditions and thereby drive further community change, the succession is?|Autogenic succession|Allogenic succession|Catastrophic succession|Seasonal succession`;
+const Q=RAW.split("\n").map((l,i)=>{const p=l.split("|");let q=p[1];const ord=q[0]==="~";if(ord)q=q.slice(1);const o=p.slice(2);return{id:i,w:+p[0],q,o,ord,a:ord?o[3]:o[0]}});
+const IV=[0,1,3,7,16,35],DAY=864e5,K="nptel-eco-sr-v1";
+let S={},queue=[],total=0,miss=new Set(),score=0,cur=null,locked=false,fb=null,nx=null,sure=false;
+try{S=JSON.parse(localStorage.getItem(K))||{}}catch(e){S={}}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const app=document.getElementById("app");
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const btn=(t,f,c)=>{const b=el("button","btn "+(c||""),t);b.onclick=f;return b};
+const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const when=t=>{const h=Math.max(1,Math.ceil((t-Date.now())/36e5));if(h<24)return"in "+h+(h==1?" hour":" hours");const d=Math.round(h/24);return"in "+d+(d==1?" day":" days")};
+
+function home(msg){
+  const n=Date.now(),v=Object.values(S);
+  const mas=v.filter(s=>s.b>=4).length,due=v.filter(s=>s.d<=n).length;
+  const grid=el("div","grid");
+  [["New",Q.length-v.length],["Learning",v.length-mas],["Mastered",mas],["Due now",due]].forEach(([k,x])=>{const d=el("div","st");d.append(el("strong",0,x),el("span",0,k));grid.append(d)});
+  const rs=el("button","link","Reset progress");
+  rs.onclick=()=>{if(!sure){sure=true;rs.textContent="Tap again to erase all progress";return}S={};save();sure=false;home()};
+  app.replaceChildren(
+    el("h1",0,"Ecology and Conservation Quiz"),
+    el("p","mut","NPTEL revision bank, Weeks 1–"+12+". "+Q.length+" questions, shuffled every time."),
+    ...(msg?[el("p","note",msg)]:[]),
+    grid,
+    btn("Start spaced session",()=>start(false),"pri"),
+    btn("Shuffle all "+Q.length+" questions",()=>start(true)),
+    el("p","mut","A spaced session gives you everything that’s due plus up to 20 new questions. Right answers come back after 1, 3, 7, 16 and 35 days. Misses return within a few cards and restart the ladder. Progress is saved in this browser."),
+    rs
+  );
+}
+function start(all){
+  const n=Date.now();let ids=Q.map(q=>q.id);
+  if(!all)ids=ids.filter(i=>S[i]&&S[i].d<=n).concat(shuffle(ids.filter(i=>!S[i])).slice(0,20));
+  if(!ids.length)return home("Nothing is due right now. Your next review is "+when(Math.min(...Object.values(S).map(s=>s.d)))+". You can still shuffle everything.");
+  queue=shuffle(ids);total=queue.length;miss=new Set();score=0;sure=false;card();
+}
+function card(){
+  if(!queue.length)return done();
+  const c=Q[queue[0]],left=new Set(queue).size;cur=c;locked=false;
+  const opts=c.ord?c.o.slice():shuffle(c.o.slice());
+  const end=el("button","link","End session");end.onclick=()=>home();
+  const top=el("div","top"),l=el("span");l.append(el("span","pill","Week "+c.w),document.createTextNode(left+" to go"));top.append(l,end);
+  const bar=el("div","bar"),f=el("i");f.style.width=(100*(total-left)/total)+"%";bar.append(f);
+  const box=el("div");
+  opts.forEach((t,i)=>{const b=el("button","opt");b.append(el("b",0,i+1),el("span",0,t));b.onclick=()=>pick(b,t);box.append(b)});
+  fb=el("div","fb");
+  app.replaceChildren(top,bar,el("h2","q",c.q),box,fb);
+}
+function pick(b,t){
+  if(locked)return;locked=true;
+  const id=cur.id,ok=t===cur.a,n=Date.now(),s=S[id]||{b:0,d:0},early=S[id]&&s.d>n&&!miss.has(id);
+  document.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(o.lastChild.textContent===cur.a)o.classList.add("ok");else if(o===b)o.classList.add("no")});
+  let note;queue.shift();
+  if(ok){
+    if(!miss.has(id))score++;
+    if(early)note="Not due yet, so its schedule stays put.";
+    else{s.b=miss.has(id)?1:Math.min(s.b+1,5);s.d=n+IV[s.b]*DAY;note="You’ll see it again "+when(s.d)+"."}
+  }else{
+    miss.add(id);s.b=0;s.d=n;queue.splice(Math.min(3,queue.length),0,id);note="This one comes back in a few cards."
+  }
+  S[id]=s;save();
+  nx=el("button","btn pri",queue.length?"Next":"Finish");nx.onclick=card;
+  fb.append(el("p","v "+(ok?"ok":"no"),ok?"Correct":"Not quite. The answer is: "+cur.a),el("p","mut",note),nx);
+  nx.focus();
+}
+function done(){
+  app.replaceChildren(el("h1",0,"Session complete"),el("p",0,"First-try correct: "+score+" of "+total+" ("+Math.round(100*score/total)+"%)."),btn("Back to start",()=>home(),"pri"));
+}
+document.onkeydown=e=>{
+  if(!document.querySelector(".opt"))return;
+  if(!locked&&/^[1-4]$/.test(e.key)){const o=document.querySelectorAll(".opt")[e.key-1];if(o)o.click()}
+};
+home();
+</script>
+</body>
+</html>
